@@ -1,0 +1,37 @@
+#!/bin/bash
+
+rm ./f_dataset-MH01_mono.txt
+rm ./read.txt
+rm ./result.txt
+rm ./read_all.txt
+rm ./result_all.txt
+rm ./kf_dataset-MH01_mono.txt
+rm ./my_params.txt
+
+rm ./f_dataset-MH02_mono.txt
+rm ./kf_dataset-MH02_mono.txt
+
+rm ./f_dataset-MH03_mono.txt
+rm ./kf_dataset-MH03_mono.txt
+
+rm ./f_dataset-MH04_mono.txt
+rm ./kf_dataset-MH04_mono.txt
+
+rm ./f_dataset-MH05_mono.txt
+rm ./kf_dataset-MH05_mono.txt
+rm ./f_dataset-V101_mono.txt
+rm ./kf_dataset-V101_mono.txt
+
+rm ./f_dataset-V102_mono.txt
+rm ./kf_dataset-V102_mono.txt
+rm ./f_dataset-V103_mono.txt
+rm ./kf_dataset-V103_mono.txt
+rm ./f_dataset-V201_mono.txt
+rm ./kf_dataset-V201_mono.txt
+rm ./f_dataset-V202_mono.txt
+rm ./kf_dataset-V202_mono.txt
+rm ./f_dataset-V203_mono.txt
+rm ./kf_dataset-V203_mono.txt
+
+
+rm ./f_mono_pose_all.txt

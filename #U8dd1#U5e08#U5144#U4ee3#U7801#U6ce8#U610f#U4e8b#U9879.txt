@@ -1,0 +1,20 @@
+1、将Thirdparty下的DBow2和g2o下的Cmakelist.txt文件的eigen和opencv版本去掉（或者改为自己的版本）
+
+2、修改后在DBoW2下的build文件内的删除，在build目录下打开终端，重新打开build目录下的终端执行camke ..  
+make(g2o也一样)
+
+3、将以下代码加入Examples/Monocular/mono_euroc.cc的main函数最前面即可：注意路径
+remove("/home/gavin/ORB_SLAM3-master/kf_dataset-MH01_mono.txt");
+remove("/home/gavin/ORB_SLAM3-master/f_dataset-MH01_mono.txt");
+remove("/home/gavin/ORB_SLAM3-master/read.txt");
+remove("/home/gavin/ORB_SLAM3-master/read_all.txt");
+remove("/home/gavin/ORB_SLAM3-master/result.txt");
+remove("/home/gavin/ORB_SLAM3-master/result_all.txt");
+还有两个是v102数据集的删除可借鉴上面写法
+
+4、最外层的Cmakelist.txt文件同样修改为自己对应版本后，删除build文件夹，重新执行./build.sh
+
+5、在最外层的Cmakelist.txt添加    set(CMAKE_CXX_STANDARD 14)保证编译环境为支持14
+
+6、运行
+./Examples/Monocular/mono_euroc ./Vocabulary/ORBvoc.txt ./Examples/Monocular/EuRoC.yaml ./data/MH01 ./Examples/Monocular/EuRoC_TimeStamps/MH01.txt dataset-MH01_mono
